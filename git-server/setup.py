@@ -7,7 +7,7 @@ git_server_config_url = "https://github.com/githubutilities/git-server-config.gi
 
 # get parameter
 if len(sys.argv) < 2 or len(sys.argv) > 3:
-    sys.stderr.write("setup.py <directory>")
+    sys.stderr.write("setup.py <directory> [git_config_git_url]")
     sys.exit(1)
 if len(sys.argv) == 3:
     git_server_config_url = sys.argv[2]
